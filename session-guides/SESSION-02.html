@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>SESSION-02 - Wizcamp Session Guide</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+
+@page {
+margin: 0.6in 0.75in 0.6in 0.75in;
+size: letter;
+}
+body {
+font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+font-size: 16px;
+line-height: 1.4;
+color: #1f2328;
+margin: 0;
+padding: 0;
+max-width: none;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+font-weight: 600;
+line-height: 1.25;
+margin-bottom: 16px;
+margin-top: 24px;
+}
+h1 {
+font-size: 1.75em;
+border-bottom: 1px solid #d0d7de;
+padding-bottom: 0.3em;
+margin-top: 0;
+}
+h2 {
+font-size: 1.5em;
+border-bottom: 1px solid #d0d7de;
+padding-bottom: 0.3em;
+margin-top: 36px;
+margin-bottom: 18px;
+page-break-after: avoid;
+}
+
+h1 + * h2:first-of-type,
+h2:first-of-type {
+margin-top: 24px;
+}
+
+a[id] {
+scroll-margin-top: 20px;
+}
+h3 {
+font-size: 1.25em;
+margin-top: 24px;
+margin-bottom: 12px;
+page-break-after: avoid;
+break-after: avoid;
+}
+
+h3 + ol,
+h3 + ul,
+h3 + p {
+page-break-before: avoid;
+break-before: avoid;
+}
+
+ol, ul {
+page-break-inside: avoid;
+break-inside: avoid;
+}
+
+h3 {
+orphans: 2;
+widows: 2;
+}
+code {
+font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Consolas, monospace !important;
+font-size: 13px !important;
+font-weight: 500 !important;
+background-color: #f1f3f4 !important;
+color: #c7254e !important;
+padding: 2px 4px !important;
+border-radius: 3px !important;
+border: 1px solid #d1d5da !important;
+white-space: nowrap;
+word-break: break-word;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+}
+pre {
+font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Consolas, monospace !important;
+background-color: #f8f9fa !important;
+border: 1px solid #e1e4e8 !important;
+border-radius: 6px !important;
+padding: 16px !important;
+overflow: visible !important;
+white-space: pre !important;
+word-wrap: normal !important;
+page-break-inside: avoid !important;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+font-size: 14px !important;
+line-height: 1.4 !important;
+display: block !important;
+width: 100% !important;
+}
+
+@media print {
+pre {
+white-space: pre !important;
+font-family: "JetBrains Mono", monospace !important;
+display: block !important;
+}
+pre * {
+white-space: pre !important;
+}
+}
+pre code {
+background-color: transparent !important;
+border: none !important;
+padding: 0 !important;
+color: #24292f !important;
+}
+ul, ol {
+padding-left: 1.8em;
+margin-bottom: 12px;
+}
+li {
+margin-bottom: 6px;
+line-height: 1.4;
+}
+
+@media print {
+ul, ol {
+page-break-inside: avoid;
+display: block !important;
+}
+li {
+page-break-inside: avoid;
+display: list-item !important;
+margin-bottom: 8px !important;
+}
+
+* {
+box-sizing: border-box !important;
+}
+}
+p {
+margin-bottom: 12px;
+}
+a {
+color: #0969da;
+text-decoration: none;
+}
+strong {
+font-weight: 600;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width: 100%;
+margin: 16px 0;
+font-size: 16px;
+line-height: 1.5;
+}
+th, td {
+padding: 12px 16px;
+text-align: left;
+vertical-align: top;
+border: 1px solid #d0d7de;
+}
+th {
+font-weight: 600;
+background-color: #f6f8fa;
+color: #24292f;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+}
+tbody tr:nth-child(even) {
+background-color: #f8f9fa;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+}
+
+table code {
+font-size: 14px !important;
+padding: 2px 4px !important;
+}
+
+table td:first-child {
+min-width: 150px;
+}
+
+table {
+page-break-inside: auto !important;
+}
+th {
+page-break-after: avoid !important;
+}
+tbody tr {
+page-break-inside: avoid !important;
+page-break-after: auto !important;
+}
+
+thead {
+display: table-header-group !important;
+}
+@media print {
+thead {
+display: table-row-group !important;
+}
+table {
+page-break-inside: auto !important;
+}
+tr {
+page-break-inside: avoid !important;
+}
+}
+</style>
+</head>
+<body>
+<h1 id="session-2-building-game-components">Session 2 — Building Game Components</h1>
+<p>Building Reusable UI Elements 🧩</p>
+<p>You’re about to build your first custom React component and unlock the power of reusable UI building blocks — the secret to fast, scalable development in React. This guide walks you through creating a GameButton component, understanding props, and using professional developer tools. Ready to build like a pro? Let’s go!</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#create-your-first-component">Create Your First Component</a></li>
+<li><a href="#understanding-props">Understanding Props</a></li>
+<li><a href="#adding-click-functionality">Adding Click Functionality</a></li>
+<li><a href="#styling-with-variants">Styling with Variants</a></li>
+<li><a href="#reusing-your-component">Reusing Your Component</a></li>
+<li><a href="#install-react-devtools">Install React DevTools</a></li>
+<li><a href="#essential-terms">Essential Terms</a></li>
+<li><a href="#ask-the-ai">Ask the AI</a></li>
+</ul>
+<p><a id="create-your-first-component"></a></p>
+<h2 id="create-your-first-component">🧩 Create Your First Component</h2>
+<p>Let’s build a GameButton component for starting your trivia game. Components are like digital LEGO blocks — custom, reusable UI elements.</p>
+<ol type="1">
+<li><strong>Create the file</strong>: Right-click <code>src/components</code> → New File → name it <code>GameButton.jsx</code></li>
+<li><strong>Use VS Code snippet</strong>: Type <code>ednf</code> (exportDefaultNamedFunction) and press Tab</li>
+<li><strong>Replace first placeholder</strong> with <code>GameButton</code></li>
+<li><strong>Remove second placeholder</strong> completely, leaving empty <code>()</code> parentheses</li>
+<li><strong>Add return statement</strong>: Type <code>return &lt;button&gt;Start Adventure&lt;/button&gt;;</code></li>
+<li><strong>Import into SplashScreen</strong>: Add <code>import GameButton from &quot;./GameButton&quot;</code> at the top</li>
+</ol>
+<blockquote>
+<p>📦 <strong>Quick Explanation</strong>: <code>export default</code> lets other files use this component. <code>import</code> brings it into another file. Think of it like sharing and borrowing LEGO instructions!</p>
+</blockquote>
+<ol start="7" type="1">
+<li><p><strong>Add your button</strong>: Replace the TODO comment in splash-buttons div with:</p>
+<pre class="jsx"><code>&lt;GameButton /&gt;</code></pre></li>
+<li><p><strong>Test it</strong>: Run <code>npm run dev</code> and you should see your custom button!</p></li>
+</ol>
+<h3 id="why-this-matters">💡 Why This Matters</h3>
+<p><strong>Components</strong> are the heart of React — reusable UI elements that combine markup, styling, and logic. Think of them as your own custom HTML tags. The <code>.jsx</code> file extension means you’re writing <strong>JSX</strong>, a special syntax that looks like HTML but is actually JavaScript. JSX lets you describe what the UI should look like using readable, expressive code.</p>
+<h3 id="bonus-challenge">🏆 Bonus Challenge</h3>
+<p>Try changing the button text in GameButton.jsx and watch it update instantly thanks to Hot Module Replacement!</p>
+<p><a id="understanding-props"></a></p>
+<h2 id="understanding-props">📦 Understanding Props</h2>
+<p>Props (short for “properties”) are how you pass data from parent components to child components. They’re like function parameters but for React components.</p>
+<ol type="1">
+<li><p><strong>Add text prop to GameButton</strong>:</p>
+<pre class="jsx"><code>export default function GameButton({ text }) {
+  return &lt;button&gt;{text}&lt;/button&gt;;
+}</code></pre></li>
+<li><p><strong>Update SplashScreen to pass text</strong>:</p>
+<pre class="jsx"><code>&lt;GameButton text=&quot;Start Adventure&quot; /&gt;</code></pre></li>
+<li><p><strong>Watch the magic</strong>: Your button now shows custom text!</p></li>
+</ol>
+<h3 id="why-this-matters-1">💡 Why This Matters</h3>
+<p><strong>Props</strong> let parent components pass data to child components — just like function parameters. This makes your components flexible and reusable. The <code>{ text }</code> syntax is called <strong>destructuring</strong> — it pulls out just the values you need from the props object, keeping your code clean and readable.</p>
+<p><a id="adding-click-functionality"></a></p>
+<h2 id="adding-click-functionality">🖱️ Adding Click Functionality</h2>
+<p>Let’s make your buttons actually do something when clicked. In React, you can pass functions as props just like any other data.</p>
+<ol type="1">
+<li><p><strong>Add onClick prop to GameButton</strong>:</p>
+<pre class="jsx"><code>export default function GameButton({ text, onClick }) {
+  return &lt;button onClick={onClick}&gt;{text}&lt;/button&gt;;
+}</code></pre></li>
+<li><p><strong>Update SplashScreen with click handler</strong>:</p>
+<pre class="jsx"><code>&lt;GameButton
+  text=&quot;Start Adventure&quot;
+  onClick={() =&gt; alert(&#39;Start Game!&#39;)}
+/&gt;</code></pre></li>
+<li><p><strong>Test it</strong>: Click your button and see the alert!</p></li>
+</ol>
+<h3 id="why-this-matters-2">💡 Why This Matters</h3>
+<p><strong>Functions as props</strong> let you control what happens when a component is used — without changing the component itself. This keeps your components flexible and focused on UI, while the parent decides the behavior. It’s a key pattern in React for building interactive apps.</p>
+<p><a id="styling-with-variants"></a></p>
+<h2 id="styling-with-variants">🎨 Styling with Variants</h2>
+<p>Let’s add visual variety to your buttons using CSS classes, default parameters, and a clean variable approach.</p>
+<ol type="1">
+<li><p><strong>Add variant prop with default value and create buttonClass variable</strong>:</p>
+<pre class="jsx"><code>export default function GameButton({ text, onClick, variant = &quot;primary&quot; }) {
+  const buttonClass = `game-button ${variant}`;
+
+  return (
+    &lt;button className={buttonClass} onClick={onClick}&gt;
+      {text}
+    &lt;/button&gt;
+  );
+}</code></pre></li>
+<li><p><strong>Update SplashScreen with variant</strong>:</p>
+<pre class="jsx"><code>&lt;GameButton
+  text=&quot;Start Adventure&quot;
+  onClick={() =&gt; alert(&#39;Start Game!&#39;)}
+  variant=&quot;primary&quot;
+/&gt;</code></pre></li>
+<li><p><strong>Admire your styled button</strong>: Your button now has the primary styling!</p></li>
+</ol>
+<h3 id="why-this-matters-3">💡 Why This Matters</h3>
+<p><strong>className</strong> is React’s version of the HTML <code>class</code> attribute. We use a <strong>template literal</strong> to build a dynamic class name like <code>game-button primary</code>. This matches the styles already defined in your project. The <code>variant</code> prop lets you switch between styles like <code>primary</code> and <code>secondary</code>, and <strong>default parameters</strong> like <code>variant = &quot;primary&quot;</code> ensure your component still works even if no variant is passed.</p>
+<p><a id="reusing-your-component"></a></p>
+<h2 id="reusing-your-component">🔄 Reusing Your Component</h2>
+<p>Now that you’ve built a complete, fully-featured GameButton component, let’s experience the power of reusability by adding a second button for the game’s credits.</p>
+<ol type="1">
+<li><p><strong>Add a second button</strong>: Below your existing GameButton in SplashScreen, add a credits button:</p>
+<pre class="jsx"><code>&lt;GameButton
+  text=&quot;Credits&quot;
+  onClick={() =&gt; alert(&#39;Show Credits&#39;)}
+  variant=&quot;secondary&quot;
+/&gt;</code></pre></li>
+<li><p><strong>Admire your work</strong>: You now have two different buttons using the same component!</p></li>
+</ol>
+<h3 id="why-this-matters-4">💡 Why This Matters</h3>
+<p><strong>Component reusability</strong> is React’s superpower. You wrote the GameButton code once, but now you can use it anywhere in your app with different props. Thanks to your stylesheet, each variant (<code>primary</code>, <code>secondary</code>) automatically applies the right look — no extra styling needed.</p>
+<h3 id="bonus-challenge-1">🏆 Bonus Challenge</h3>
+<p>Try adding a third GameButton with <code>variant=&quot;primary&quot;</code> and <code>text=&quot;Instructions&quot;</code> to see how easy it is to scale your UI!</p>
+<p><a id="install-react-devtools"></a></p>
+<h2 id="install-react-devtools">🔍 Install React DevTools</h2>
+<p>React DevTools is like X-ray vision for your React app — see component structure, props, and state in real-time.</p>
+<h3 id="browser-installation">Browser Installation</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Browser</th>
+<th>Installation Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Chrome</strong></td>
+<td><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">Chrome Web Store</a></td>
+<td>Most popular choice</td>
+</tr>
+<tr class="even">
+<td><strong>Firefox</strong></td>
+<td><a href="https://addons.mozilla.org/en-US/firefox/addon/react-devtools/">Firefox Add-ons</a></td>
+<td>Great alternative</td>
+</tr>
+<tr class="odd">
+<td><strong>Edge</strong></td>
+<td><a href="https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil">Edge Add-ons</a></td>
+<td>Windows default</td>
+</tr>
+<tr class="even">
+<td><strong>Safari</strong></td>
+<td>Manual installation required</td>
+<td>Advanced users only</td>
+</tr>
+</tbody>
+</table>
+<h3 id="using-devtools">Using DevTools</h3>
+<ol type="1">
+<li><strong>Open DevTools</strong>: Press F12 or right-click → Inspect</li>
+<li><strong>Find Components tab</strong>: Look for “Components” next to Console, Network, etc.</li>
+<li><strong>Explore your app</strong>: Click on components in the tree to see their props</li>
+<li><strong>Inspect GameButton</strong>: Find your GameButton component and see the text, onClick, and variant props!</li>
+</ol>
+<h3 id="why-this-matters-5">💡 Why This Matters</h3>
+<p><strong>React DevTools</strong> gives you X-ray vision into your app. You can inspect components, props, and state in real time — just like a pro. It’s one of the most important tools for debugging and understanding how your app works under the hood.</p>
+<p><a id="essential-terms"></a></p>
+<h2 id="essential-terms">📚 Essential Terms</h2>
+<p><em>Quick reference for all the React concepts you just learned:</em></p>
+<table>
+<colgroup>
+<col style="width: 11%"></col>
+<col style="width: 43%"></col>
+<col style="width: 45%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🧩 component</td>
+<td>A reusable piece of UI that can include markup, styles, and logic (example: <code>&lt;SplashScreen /&gt;</code>).</td>
+<td>You’ll build your entire app by composing components together — they’re React’s building blocks.</td>
+</tr>
+<tr class="even">
+<td>📦 props</td>
+<td>Properties passed from parent to child components, like function parameters but for React.</td>
+<td>Props let you customize components and pass data around your app — essential for reusable components.</td>
+</tr>
+<tr class="odd">
+<td>✨ JSX</td>
+<td>JavaScript syntax that looks like HTML — used to describe UI in React components (<code>.jsx</code>).</td>
+<td>You’ll write JSX in your GameButton component to describe what the button should look like.</td>
+</tr>
+<tr class="even">
+<td>🎨 className</td>
+<td>React’s version of the HTML <code>class</code> attribute for applying CSS styles.</td>
+<td>Use className instead of class because class is a reserved word in JavaScript.</td>
+</tr>
+<tr class="odd">
+<td>📤 destructuring</td>
+<td>Extracting values from objects/arrays into variables, like <code>{ text, onClick }</code> from props.</td>
+<td>Makes your code cleaner by avoiding repetitive <code>props.text</code>, <code>props.onClick</code> syntax.</td>
+</tr>
+<tr class="even">
+<td>🔤 template literals</td>
+<td>String interpolation using backticks and <code>${}</code> for dynamic strings.</td>
+<td>Perfect for creating dynamic CSS classes like <code>`game-button ${variant}`</code>.</td>
+</tr>
+<tr class="odd">
+<td>⚙️ default parameters</td>
+<td>Fallback values for function parameters, like <code>variant = &quot;primary&quot;</code>.</td>
+<td>Ensures your components work even when some props aren’t provided.</td>
+</tr>
+<tr class="even">
+<td>🔍 React DevTools</td>
+<td>Browser extension for inspecting React component trees, props, and state.</td>
+<td>Essential debugging tool — like X-ray vision for your React app.</td>
+</tr>
+</tbody>
+</table>
+<p><a id="ask-the-ai"></a></p>
+<h2 id="ask-the-ai-component-mastery">🤖 Ask the AI — Component Mastery</h2>
+<p>You just created your first reusable React component with props, styling, and click handlers — excellent work!</p>
+<p>Now let’s deepen your understanding of components, props, and the React development workflow. Here are the most impactful questions to ask your AI assistant about today’s session:</p>
+<ul>
+<li><strong>What makes React components reusable and why is that important?</strong></li>
+<li><strong>How do props work in React and why are they read-only?</strong></li>
+<li><strong>Why do we use className instead of class in React?</strong></li>
+<li><strong>How do template literals work and why are they perfect for dynamic CSS classes?</strong></li>
+<li><strong>What’s the difference between a React component and a regular JavaScript function?</strong></li>
+<li><strong>How does JSX let me write HTML-like code inside JavaScript?</strong></li>
+<li><strong>Can I pass functions as props? How does that work and why is it powerful?</strong></li>
+<li><strong>What can I do with React DevTools that I can’t do with regular browser DevTools?</strong></li>
+</ul>
+<hr />
+<h3 id="pro-tip">💬 Pro Tip:</h3>
+<p>Components are everywhere in React — every piece of UI you see is a component. Start thinking in components: “What reusable pieces could I break this UI into?” This mindset will make you a better React developer.</p>
+</body>
+</html>

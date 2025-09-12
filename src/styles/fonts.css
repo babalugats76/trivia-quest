@@ -1,0 +1,32 @@
+/* ============================================================================
+   GOOGLE FONTS - How to Add or Change Fonts
+   ============================================================================
+   
+   🎯 WANT TO ADD A NEW FONT? Follow these 3 easy steps:
+   
+   1. Go to fonts.google.com and find a font you like
+   2. Click "Select this style" for the weights you want (400=normal, 700=bold)
+   3. Copy the @import line and paste it below
+   
+   Example: To add "Roboto" font:
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+   
+   💡 USING YOUR FONT IN CSS:
+   After importing, use it like this:
+   font-family: 'Roboto', sans-serif;
+   
+   🔧 FONT WEIGHTS EXPLAINED:
+   - 300 = Light
+   - 400 = Normal (default)
+   - 500 = Medium  
+   - 600 = Semi-bold
+   - 700 = Bold
+   - 900 = Black/Extra-bold
+   
+   ⚡ PRO TIP: Only import the weights you actually use to keep your site fast!
+   
+   ============================================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");

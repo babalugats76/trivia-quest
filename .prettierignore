@@ -1,0 +1,20 @@
+dist/
+build/
+node_modules/
+*.min.js
+*.min.css
+package-lock.json
+
+# Documentation and static files
+*.md
+*.pdf
+*.txt
+*.json
+session-guides/
+README.md
+CHANGELOG.md
+
+# Config files
+vite.config.js
+.github/workflows/deploy.yml
+.prettierrc

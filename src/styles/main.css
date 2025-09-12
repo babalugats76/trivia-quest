@@ -1,0 +1,505 @@
+/* ===================================
+   GLOBAL STYLES
+   ================================= */
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* ===================================
+   SPLASH SCREEN
+   ================================= */
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  color: #1f2937;
+  text-align: center;
+}
+
+.game-logo {
+  max-width: 400px;
+  width: 80%;
+  aspect-ratio: 1;
+  margin: 0 auto 2rem auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.splash-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.game-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.game-button.primary {
+  background: #aa54ff;
+  color: white;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.3rem;
+  border-radius: 12px;
+  font-weight: 600;
+  min-width: 200px;
+}
+
+.game-button.primary:hover {
+  background: #8b3fd9;
+  transform: translateY(-2px);
+}
+
+.game-button.secondary {
+  background: rgba(31, 41, 55, 0.1);
+  color: #1f2937;
+  border: 2px solid rgba(31, 41, 55, 0.3);
+}
+
+.game-button.secondary:hover {
+  background: rgba(31, 41, 55, 0.2);
+  border-color: rgba(31, 41, 55, 0.5);
+  transform: translateY(-1px);
+}
+
+/* ===================================
+   MODAL COMPONENTS
+   ================================= */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 2rem;
+}
+
+.modal-content {
+  background: white;
+  color: #1f2937;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-content h2 {
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+  font-size: 1.5rem;
+}
+
+.credits-modal {
+  max-width: 600px;
+}
+
+.credit-section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.credit-section:last-child {
+  border-bottom: none;
+}
+
+.credit-section h3 {
+  color: #aa54ff;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.credit-section p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.credit-section a {
+  color: #aa54ff;
+  text-decoration: underline;
+}
+
+.close-modal {
+  padding: 0.75rem 1.5rem;
+  background: #aa54ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.close-modal:hover {
+  background: #8b3fd9;
+}
+
+/* ===================================
+   GAME MAP
+   ================================= */
+.map-canvas {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-background,
+.map-interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map-background {
+  object-fit: contain;
+  z-index: 0;
+}
+
+.map-interactive {
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.zones,
+.interactive-layer {
+  pointer-events: auto;
+}
+
+/* ===================================
+   HUD (HEADS-UP DISPLAY)
+   ================================= */
+.score-display {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: rgba(170, 84, 255, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: 1px solid rgba(170, 84, 255, 0.3);
+  z-index: 100;
+}
+
+.zone-info {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #1f2937;
+  z-index: 100;
+  max-width: 200px;
+}
+
+.zone-name {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.zone-theme {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.music-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  z-index: 100;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.music-toggle:hover {
+  background: #f8fafc;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================================
+   QUIZ MODAL
+   ================================= */
+.quiz-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.quiz-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .quiz-content {
+    padding: 2.5rem;
+  }
+}
+
+.question-header {
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.question-text {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6b7280;
+  line-height: 1;
+  z-index: 1;
+}
+
+.progress-header {
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0.5rem 1rem;
+  border-radius: 16px 16px 0 0;
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .progress-header {
+    padding: 0.75rem 1.5rem;
+    margin: -2.5rem -2.5rem 1.5rem -2.5rem;
+  }
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.progress-text {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+/* ===================================
+   PROGRESS DOTS - Session 11 Extension
+   ================================= */
+/* TODO: Session 11 - Uncomment these styles when adding progress dots extension
+
+.progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d1d5db;
+  transition: all 0.3s ease;
+}
+
+.progress-dot.current {
+  background: #aa54ff;
+}
+
+.progress-dot.answered-correct {
+  background: #01e7e4;
+}
+
+.progress-dot.answered-wrong {
+  background: #aa54ff;
+}
+
+.progress-dot.unanswered {
+  background: #d1d5db;
+}
+
+*/
+
+.answers-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.answer-button {
+  padding: 0.75rem;
+  border: 2px solid #e5e7eb;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.answer-button:hover:not(:disabled) {
+  border-color: #aa54ff;
+  background: #faf5ff;
+  transform: translateY(-1px);
+}
+
+.answer-button:disabled {
+  cursor: not-allowed;
+}
+
+.answer-button.correct {
+  border-color: #01e7e4;
+  background: #f0fdfa;
+}
+
+.answer-button.incorrect {
+  border-color: #aa54ff;
+  background: #faf5ff;
+}
+
+.result {
+  background: #f9fafb;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.placeholder-text {
+  color: #6b7280;
+  font-style: italic;
+}
+
+.next-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1rem;
+  background: #aa54ff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.next-button:hover:not(:disabled) {
+  background: #8b3fd9;
+  transform: translateY(-1px);
+}
+
+.next-button.disabled {
+  background: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.next-button.disabled:hover {
+  background: #e5e7eb;
+  transform: none;
+}
+
+/* ===================================
+   COORDINATE DISPLAY (DEVELOPMENT)
+   ================================= */
+.coordinate-display {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.8rem;
+  z-index: 200;
+  pointer-events: none;
+}
+
+/* ===================================
+   GAME OVER SCREEN
+   ================================= */
+.game-over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  color: #1f2937;
+  text-align: center;
+}
+
+.final-score {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}

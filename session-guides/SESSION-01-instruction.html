@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>SESSION-01-instruction - Wizcamp Session Guide</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+
+@page {
+margin: 0.6in 0.75in 0.6in 0.75in;
+size: letter;
+}
+body {
+font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+font-size: 16px;
+line-height: 1.4;
+color: #1f2328;
+margin: 0;
+padding: 0;
+max-width: none;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+font-weight: 600;
+line-height: 1.25;
+margin-bottom: 16px;
+margin-top: 24px;
+}
+h1 {
+font-size: 1.75em;
+border-bottom: 1px solid #d0d7de;
+padding-bottom: 0.3em;
+margin-top: 0;
+}
+h2 {
+font-size: 1.5em;
+border-bottom: 1px solid #d0d7de;
+padding-bottom: 0.3em;
+margin-top: 36px;
+margin-bottom: 18px;
+page-break-after: avoid;
+}
+
+h1 + * h2:first-of-type,
+h2:first-of-type {
+margin-top: 24px;
+}
+
+a[id] {
+scroll-margin-top: 20px;
+}
+h3 {
+font-size: 1.25em;
+margin-top: 24px;
+margin-bottom: 12px;
+page-break-after: avoid;
+break-after: avoid;
+}
+
+h3 + ol,
+h3 + ul,
+h3 + p {
+page-break-before: avoid;
+break-before: avoid;
+}
+
+ol, ul {
+page-break-inside: avoid;
+break-inside: avoid;
+}
+
+h3 {
+orphans: 2;
+widows: 2;
+}
+code {
+font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Consolas, monospace !important;
+font-size: 13px !important;
+font-weight: 500 !important;
+background-color: #f1f3f4 !important;
+color: #c7254e !important;
+padding: 2px 4px !important;
+border-radius: 3px !important;
+border: 1px solid #d1d5da !important;
+white-space: nowrap;
+word-break: break-word;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+}
+pre {
+font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Consolas, monospace !important;
+background-color: #f8f9fa !important;
+border: 1px solid #e1e4e8 !important;
+border-radius: 6px !important;
+padding: 16px !important;
+overflow: visible !important;
+white-space: pre !important;
+word-wrap: normal !important;
+page-break-inside: avoid !important;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+font-size: 14px !important;
+line-height: 1.4 !important;
+display: block !important;
+width: 100% !important;
+}
+
+@media print {
+pre {
+white-space: pre !important;
+font-family: "JetBrains Mono", monospace !important;
+display: block !important;
+}
+pre * {
+white-space: pre !important;
+}
+}
+pre code {
+background-color: transparent !important;
+border: none !important;
+padding: 0 !important;
+color: #24292f !important;
+}
+ul, ol {
+padding-left: 1.8em;
+margin-bottom: 12px;
+}
+li {
+margin-bottom: 6px;
+line-height: 1.4;
+}
+
+@media print {
+ul, ol {
+page-break-inside: avoid;
+display: block !important;
+}
+li {
+page-break-inside: avoid;
+display: list-item !important;
+margin-bottom: 8px !important;
+}
+
+* {
+box-sizing: border-box !important;
+}
+}
+p {
+margin-bottom: 12px;
+}
+a {
+color: #0969da;
+text-decoration: none;
+}
+strong {
+font-weight: 600;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width: 100%;
+margin: 16px 0;
+font-size: 16px;
+line-height: 1.5;
+}
+th, td {
+padding: 12px 16px;
+text-align: left;
+vertical-align: top;
+border: 1px solid #d0d7de;
+}
+th {
+font-weight: 600;
+background-color: #f6f8fa;
+color: #24292f;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+}
+tbody tr:nth-child(even) {
+background-color: #f8f9fa;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+}
+
+table code {
+font-size: 14px !important;
+padding: 2px 4px !important;
+}
+
+table td:first-child {
+min-width: 150px;
+}
+
+table {
+page-break-inside: auto !important;
+}
+th {
+page-break-after: avoid !important;
+}
+tbody tr {
+page-break-inside: avoid !important;
+page-break-after: auto !important;
+}
+
+thead {
+display: table-header-group !important;
+}
+@media print {
+thead {
+display: table-row-group !important;
+}
+table {
+page-break-inside: auto !important;
+}
+tr {
+page-break-inside: avoid !important;
+}
+}
+</style>
+</head>
+<body>
+<h1 id="session-1-instructor-guide-setting-up-your-trivia-game">Session 1 Instructor Guide: Setting Up Your Trivia Game</h1>
+<h2 id="learning-outcomes">Learning Outcomes</h2>
+<p><strong>By the end of Session 1, students will be able to:</strong></p>
+<ol type="1">
+<li><strong>Embrace the developer role</strong> at Wizcamp Enterprises and understand the course scope including the 12-session exploration and hands-on approach</li>
+<li><strong>Explain what they are building</strong> throughout the course including the trivia game features and development journey</li>
+<li><strong>Define modern web development and fullstack</strong> including component-based architecture, API integration, and frontend-focused fullstack approach</li>
+<li><strong>Identify React’s role</strong> as a JavaScript library for building user interfaces with reusable components</li>
+<li><strong>Compare development approaches</strong> by building the same counter functionality using both Vanilla JavaScript and React</li>
+<li><strong>Distinguish React’s component-based architecture</strong> from traditional HTML/CSS/JS approaches</li>
+<li><strong>Launch a professional development environment</strong> using GitHub Codespaces and VS Code</li>
+<li><strong>Start a React development server</strong> and understand the basic development workflow</li>
+<li><strong>Navigate project structure</strong> and identify key folders and files</li>
+<li><strong>Modify React components</strong> and experience Hot Module Replacement</li>
+<li><strong>Trace the React startup flow</strong> and describe how a React app is bootstrapped</li>
+<li><strong>Identify development tools</strong> and customize basic project settings</li>
+</ol>
+<h2 id="instruction">Instruction</h2>
+<p><strong>Instructor introduces key concepts students need to succeed:</strong></p>
+<ol type="1">
+<li><strong>Welcome to Wizcamp Enterprises</strong> - Student scenario, developer role-play, and what students will experience as Junior Fullstack Developers</li>
+<li><strong>What We’re Building</strong> - Walkthrough of the finished trivia game to show the end goal</li>
+<li><strong>Modern Web Development &amp; The Fullstack Approach</strong> - Define modern web development and explain fullstack in context, including backend/frontend distinction</li>
+<li><strong>Meet React</strong> - The 5 W’s of React: what it is, who created/uses it, when it was released, where it’s used, and why it matters</li>
+<li><strong>Old School vs. New School</strong> - Counter comparison experience with both Vanilla and React sandboxes using StackBlitz</li>
+<li><strong>React vs. Vanilla JS</strong> - Direct comparison based on the counter experiences: “You just built the same thing two different ways - under which tech stack would adding another counter be more straightforward?”</li>
+<li><strong>Your Development Setup</strong> - Overview: “Codespaces gives you a complete coding environment in your browser - no downloads needed”</li>
+<li><strong>Anatomy of a React Project</strong> - Project structure, folders, what are all these files, focus on understanding the big picture</li>
+<li><strong>The Magic of Live Updates</strong> - Preview Hot Module Replacement: “When you change code, you’ll see results instantly without refreshing”</li>
+<li><strong>Let’s Code!</strong> - Overview of today’s mission and reference to SESSION-01 handout</li>
+<li><strong>Explore Your Toolkit</strong> - Tools, architecture, development workflow, package.json, Vite, npm basics for future reference</li>
+<li><strong>Behind the Scenes</strong> - How React apps bootstrap from HTML to components using carnival analogy</li>
+</ol>
+<hr />
+<h2 id="slide-deck-outline">Slide Deck Outline</h2>
+<h3 id="slide-1-welcome-to-fullstack-explorer-trivia-game-edition"><strong>Slide 1: Welcome to Fullstack Explorer: Trivia Game Edition! 🎉</strong></h3>
+<ul>
+<li><strong>Title:</strong> “Welcome to Wizcamp Enterprises”</li>
+<li><strong>Student Scenario:</strong>
+<ul>
+<li><strong>You’ve just been hired</strong> as a Junior Fullstack Developer at Wizcamp Enterprises</li>
+<li><strong>Creative tech company</strong> known for bold ideas and playful spirit</li>
+<li><strong>Your first assignment:</strong> Join the Gaming Division to build Wizcamp’s newest open-world trivia adventure</li>
+<li><strong>Role-playing experience:</strong> Step into the shoes of a real developer</li>
+</ul></li>
+<li><strong>What You’ll Experience:</strong>
+<ul>
+<li><strong>Modern developer workflow</strong> with GitHub Codespaces, VS Code, Vite, npm</li>
+<li><strong>Real coding challenges</strong> using React, JavaScript, and professional tools</li>
+<li><strong>Problem-solving mindset</strong> that defines modern web development</li>
+<li><strong>AI-powered assistance</strong> with tools like GitHub Copilot</li>
+</ul></li>
+<li><strong>Visual:</strong> Wizcamp Enterprises logo with game screenshot and developer workspace</li>
+<li><strong>Hook:</strong> “Experience what it’s like to think and work like a developer while building something amazing”</li>
+</ul>
+<h3 id="slide-2-what-were-building"><strong>Slide 2: What We’re Building 🎮</strong></h3>
+<ul>
+<li><strong>Live Demo:</strong> 2-minute walkthrough of completed trivia game</li>
+<li><strong>Key Points:</strong>
+<ul>
+<li><strong>Interactive trivia game</strong> across multiple themed zones</li>
+<li><strong>Professional UI</strong> that looks like apps you actually use</li>
+<li><strong>Real trivia questions</strong> pulled live from the internet</li>
+<li><strong>Instant feedback</strong> - know if you’re getting it right or need to level up</li>
+</ul></li>
+<li><strong>Hook:</strong> “You’ll build this entire game over 12 sessions - step by step”</li>
+</ul>
+<h3 id="slide-3-modern-web-development-the-fullstack-approach"><strong>Slide 3: Modern Web Development &amp; The Fullstack Approach 🌐</strong></h3>
+<ul>
+<li><strong>Title:</strong> “What Makes Development ‘Modern’ and ‘Fullstack’?”</li>
+<li><strong>Modern Web Development:</strong>
+<ul>
+<li><strong>Component-based architecture</strong> - Reusable, maintainable code</li>
+<li><strong>Real-time interactivity</strong> - Dynamic user experiences</li>
+<li><strong>API-driven design</strong> - Data from multiple sources</li>
+<li><strong>Professional tooling</strong> - Automated workflows and deployment</li>
+</ul></li>
+<li><strong>Fullstack in Context:</strong>
+<ul>
+<li><strong>Frontend</strong> - User interface and experience (our focus)</li>
+<li><strong>Backend</strong> - Servers, databases, APIs (we’ll consume existing ones)</li>
+<li><strong>DevOps</strong> - Deployment, hosting, CI/CD (GitHub Pages, Actions)</li>
+<li><strong>The “Full” Picture</strong> - Understanding how all pieces connect</li>
+</ul></li>
+<li><strong>Our Approach:</strong> “Frontend-focused fullstack - master the client side while understanding the complete ecosystem”</li>
+<li><strong>Visual:</strong> Diagram showing frontend, backend, and deployment layers with emphasis on frontend</li>
+</ul>
+<h3 id="slide-4-meet-react---the-heart-of-modern-web-development-️"><strong>Slide 4: Meet React - The Heart of Modern Web Development ⚛️</strong></h3>
+<ul>
+<li><strong>Title:</strong> “React: The 5 W’s”</li>
+<li><strong>What:</strong> JavaScript library for building user interfaces with reusable components</li>
+<li><strong>Who:</strong> Created by Facebook (Meta), used by Netflix, Airbnb, Instagram, WhatsApp</li>
+<li><strong>When:</strong> Released 2013, now the most popular frontend framework</li>
+<li><strong>Where:</strong> Powers millions of websites, mobile apps (React Native), desktop apps</li>
+<li><strong>Why:</strong> Makes complex UIs manageable, reusable, and maintainable at scale</li>
+<li><strong>Visual:</strong> React logo with logos of major companies using React</li>
+<li><strong>Key Insight:</strong> “React turns UI development from manual DOM manipulation into declarative component composition”</li>
+</ul>
+<h3 id="slide-5-old-school-vs.-new-school"><strong>Slide 5: Old School vs. New School 🔥</strong></h3>
+<ul>
+<li><strong>StackBlitz:</strong> “Instant development environment in your browser - no setup required!”</li>
+<li><strong>Lab Experience:</strong> “Build the same counter using two different tech stacks”</li>
+<li><strong>Part 1 - Vanilla Counter - Sandbox:</strong>
+<ul>
+<li><strong>Link:</strong> https://stackblitz.com/edit/wizcamp-vanilla-counter?file=README.md</li>
+<li><strong>Instructions:</strong> “Open link, click ‘Open Preview to the Side’, complete README steps”</li>
+<li><strong>Watch Closely:</strong> “Observe the terminal and splash screen during spin-up - what’s happening?”</li>
+</ul></li>
+<li><strong>Part 2 - React Counter - Sandbox:</strong>
+<ul>
+<li><strong>Link:</strong> https://stackblitz.com/edit/wizcamp-react-counter?file=README.md</li>
+<li><strong>Instructions:</strong> “Open link, click ‘Open Preview to the Side’, complete README steps”</li>
+<li><strong>Watch Closely:</strong> “Notice the different startup process - what tools are running?”</li>
+</ul></li>
+<li><strong>Key Questions:</strong> “Under which tech stack would adding another counter be more straightforward? What did you notice about the project setup process?”</li>
+<li><strong>README Tip:</strong> “Use ‘Open Preview to the Side’ to see formatted instructions while coding”</li>
+</ul>
+<h3 id="slide-6-react-vs.-vanilla-js"><strong>Slide 6: React vs. Vanilla JS 🆚</strong></h3>
+<ul>
+<li><strong>Reference Both Experiences:</strong> “You just built the same thing two ways - let’s compare”</li>
+<li><strong>Split Screen Comparison:</strong>
+<ul>
+<li><strong>Left:</strong> <strong>Vanilla approach</strong> (manual DOM updates, gets messy with scale)</li>
+<li><strong>Right:</strong> <strong>React approach</strong> (automatic updates, reusable components)</li>
+</ul></li>
+<li><strong>Key Insight:</strong> “Adding a second counter: Vanilla = copy/paste mess, React = just <code>&lt;Counter /&gt;</code>”</li>
+<li><strong>Analogy:</strong> “Like <strong>building with LEGO blocks</strong> vs. <strong>crafting everything from scratch</strong>”</li>
+</ul>
+<h3 id="slide-7-your-cloud-development-setup-️"><strong>Slide 7: Your Cloud Development Setup ☁️</strong></h3>
+<ul>
+<li><strong>Visual:</strong> GitHub Codespaces interface screenshot</li>
+<li><strong>Benefits:</strong>
+<ul>
+<li><strong>Zero setup</strong> - no downloads, no installs, no headaches</li>
+<li><strong>Everyone gets the same</strong> pro-level coding environment</li>
+<li><strong>VS Code in your browser</strong> - the editor real developers use</li>
+</ul></li>
+<li><strong>Reassurance:</strong> “<strong>Break stuff without fear</strong> - just restart and you’re back!”</li>
+</ul>
+<h3 id="slide-8-anatomy-of-a-react-project-️"><strong>Slide 8: Anatomy of a React Project 🏗️</strong></h3>
+<ul>
+<li><strong>Visual:</strong> Clean project tree diagram with file explanations</li>
+<li><strong>Key Focus:</strong> “<strong>What are all these files?</strong> Let’s decode your project structure”</li>
+<li><strong>Essential Folders:</strong> <code>src/</code> (your code), <code>public/</code> (static files), <code>session-guides/</code> (your roadmap)</li>
+<li><strong>Key Files:</strong> <code>package.json</code> (project info), <code>vite.config.js</code> (build tool), <code>index.html</code> (entry point)</li>
+<li><strong>Empowerment:</strong> “<strong>Focus on understanding the big picture</strong> - you’ll naturally learn where things are as you code”</li>
+</ul>
+<h3 id="slide-9-the-magic-of-live-updates"><strong>Slide 9: The Magic of Live Updates ⚡</strong></h3>
+<ul>
+<li><strong>Demo:</strong> Show HMR in action (change code → instant browser update)</li>
+<li><strong>Key Point:</strong> “<strong>Change code, see results instantly</strong> - no refresh button needed”</li>
+<li><strong>Student Expectation:</strong> “<strong>You’ll experience this</strong> in the next 5 minutes”</li>
+<li><strong>Preview:</strong> “It’s pretty cool when you see it in action”</li>
+</ul>
+<h3 id="slide-10-lets-code"><strong>Slide 10: Let’s Code! 🚀</strong></h3>
+<ul>
+<li><strong>Your Mission Today:</strong>
+<ol type="1">
+<li><strong>Launch</strong> your cloud coding setup</li>
+<li><strong>Fire up</strong> the development server</li>
+<li><strong>Swap out</strong> a React component (StartHere → SplashScreen)</li>
+<li><strong>Experience</strong> Hot Module Replacement in action</li>
+<li><strong>Customize</strong> your page title</li>
+<li><strong>Chat with AI</strong> for bonus points</li>
+</ol></li>
+<li><strong>Important Note:</strong> “<strong>Follow the provided SESSION-01 handout</strong> - you’ll find session-guides inside your Codespace once it launches”</li>
+<li><strong>Connection:</strong> “You’ll see the same instant updates you experienced in both sandboxes - but now in a real project!”</li>
+</ul>
+<h3 id="hands-on-work-happens-here"><strong>[HANDS-ON WORK HAPPENS HERE]</strong></h3>
+<h3 id="slide-11-explore-your-toolkit-️"><strong>Slide 11: Explore Your Toolkit 🛠️</strong></h3>
+<ul>
+<li><strong>Visual:</strong> Complex development architecture diagram (Codespace infrastructure)</li>
+<li><strong>Purpose:</strong> “I’m showing you this <strong>detailed diagram</strong> so you can <strong>refer back to it later</strong> when you’re curious about how everything connects”</li>
+<li><strong>Key Tools:</strong> Vite (build tool), npm (package manager), VS Code (editor)</li>
+<li><strong>Essential Commands:</strong> <code>npm run dev</code> (start server), <code>npm install</code> (get dependencies)</li>
+<li><strong>Student Approach:</strong> “<strong>Don’t try to memorize this</strong> - just know this diagram exists for when you want to understand the full picture”</li>
+</ul>
+<h3 id="slide-12-behind-the-scenes-from-html-to-react"><strong>Slide 12: Behind the Scenes: From HTML to React 🎪</strong></h3>
+<ul>
+<li><strong>Title:</strong> “Curious how React brings apps to life? This diagram walks you through the bootstrapping process—from loading a barebones HTML file to rendering a fully interactive app.”</li>
+<li><strong>Visual:</strong> React bootstrap flowchart diagram + Carnival analogy</li>
+<li><strong>Purpose:</strong> “Once initialized, React takes over and manages the DOM for your entire app”</li>
+</ul>
+<p><strong>The Journey in a Nutshell (with walkthrough):</strong></p>
+<ol type="1">
+<li><strong>HTML Entry Point</strong> - A single browser DOM node—an empty container—is defined in index.html. Think of it as a blank canvas.</li>
+<li><strong>React Root Injection</strong> - In main.jsx, a script creates a React root element (the top-level UI manager) and injects it into that empty container.</li>
+<li><strong>Component Tree Rendering</strong> - The App component—wrapped in a GameProvider (shared memory for game state)—along with its child components (buttons, text, images, etc.), is rendered into the root. This is where your UI and user interactions come to life.</li>
+<li><strong>Boom! Your Game Appears</strong> - Your interactive trivia game is now visible on the page. From this moment on, React handles all updates, interactions, and DOM changes seamlessly.</li>
+</ol>
+<p><strong>🎪 Think of it Like Setting Up a Carnival:</strong></p>
+<ul>
+<li><code>&lt;div id=&#39;root&#39;&gt;</code> in index.html = Empty field</li>
+<li>main.jsx = Carnival trucks arrive</li>
+<li>Bootstrapping = Rides go up, booths get built, lights get wired</li>
+<li>GameProvider = Main power grid powering all attractions</li>
+<li><p>App renders = Gates open—carnival is live and buzzing</p></li>
+<li><p><strong>Student Approach:</strong> “<strong>Focus on the carnival analogy today</strong> - the technical diagram is there when you’re ready to dive deeper”</p></li>
+</ul>
+<pre><code>---
+config:
+  layout: elk
+  look: neo
+---
+flowchart TB
+ subgraph Bootstrap[&quot;⚡ React Bootstrap Process&quot;]
+        FindContainer@{ label: &quot;🎯 Locate empty container&lt;br&gt;document.getElementById(&#39;root&#39;)&quot; }
+        PrepareReact[&quot;⚛️ Initialize React renderer&lt;br&gt;ReactDOM.createRoot()&quot;]
+        RenderWrappedApp[&quot;🎬 Render app with context&lt;br&gt;GameProvider → App.jsx&lt;br&gt;render()&quot;]
+  end
+    Browser[&quot;🌐 Browser loads page&quot;] --&gt; IndexHTML[&quot;📄 index.html&lt;br&gt;Includes empty container + script reference&quot;]
+    IndexHTML -- Waiting for React to initialize --&gt; EmptyDiv@{ label: &quot;📦 &amp;lt;div id=&#39;root&#39;&amp;gt;&lt;br&gt;React app is live&quot; } &amp; MainJSX[&quot;📜 main.jsx&lt;br&gt;Kickstarts the bootstrap process&quot;]
+    MainJSX --&gt; Bootstrap
+    FindContainer --&gt; PrepareReact
+    PrepareReact --&gt; RenderWrappedApp
+    Bootstrap -- Final result appears in --&gt; EmptyDiv
+    FindContainer@{ shape: rect}
+    EmptyDiv@{ shape: rect}
+     FindContainer:::bootstrap
+     PrepareReact:::bootstrap
+     RenderWrappedApp:::bootstrap
+     IndexHTML:::files
+     EmptyDiv:::container
+     MainJSX:::files
+    classDef files fill:#e3f2fd,stroke:#2196f3,stroke-width:3px
+    classDef container fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    classDef bootstrap fill:#e8f5e8,stroke:#4caf50,stroke-width:2px</code></pre>
+</body>
+</html>

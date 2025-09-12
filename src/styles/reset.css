@@ -1,0 +1,49 @@
+/**
+ * BROWSER RESET - Makes all browsers behave the same
+ * 
+ * This file makes sure your game looks identical in Chrome, Firefox, Safari, etc.
+ * You don't need to understand this - just know it makes things consistent!
+ */
+
+/* Remove default spacing and make box-sizing predictable */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make buttons and form elements inherit fonts */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Remove button styling differences between browsers */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Make images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove list bullets */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove link underlines */
+a {
+  text-decoration: none;
+  color: inherit;
+}

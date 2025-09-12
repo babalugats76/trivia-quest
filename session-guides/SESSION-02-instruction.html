@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>SESSION-02-instruction - Wizcamp Session Guide</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+
+@page {
+margin: 0.6in 0.75in 0.6in 0.75in;
+size: letter;
+}
+body {
+font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+font-size: 16px;
+line-height: 1.4;
+color: #1f2328;
+margin: 0;
+padding: 0;
+max-width: none;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+font-weight: 600;
+line-height: 1.25;
+margin-bottom: 16px;
+margin-top: 24px;
+}
+h1 {
+font-size: 1.75em;
+border-bottom: 1px solid #d0d7de;
+padding-bottom: 0.3em;
+margin-top: 0;
+}
+h2 {
+font-size: 1.5em;
+border-bottom: 1px solid #d0d7de;
+padding-bottom: 0.3em;
+margin-top: 36px;
+margin-bottom: 18px;
+page-break-after: avoid;
+}
+
+h1 + * h2:first-of-type,
+h2:first-of-type {
+margin-top: 24px;
+}
+
+a[id] {
+scroll-margin-top: 20px;
+}
+h3 {
+font-size: 1.25em;
+margin-top: 24px;
+margin-bottom: 12px;
+page-break-after: avoid;
+break-after: avoid;
+}
+
+h3 + ol,
+h3 + ul,
+h3 + p {
+page-break-before: avoid;
+break-before: avoid;
+}
+
+ol, ul {
+page-break-inside: avoid;
+break-inside: avoid;
+}
+
+h3 {
+orphans: 2;
+widows: 2;
+}
+code {
+font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Consolas, monospace !important;
+font-size: 13px !important;
+font-weight: 500 !important;
+background-color: #f1f3f4 !important;
+color: #c7254e !important;
+padding: 2px 4px !important;
+border-radius: 3px !important;
+border: 1px solid #d1d5da !important;
+white-space: nowrap;
+word-break: break-word;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+}
+pre {
+font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Consolas, monospace !important;
+background-color: #f8f9fa !important;
+border: 1px solid #e1e4e8 !important;
+border-radius: 6px !important;
+padding: 16px !important;
+overflow: visible !important;
+white-space: pre !important;
+word-wrap: normal !important;
+page-break-inside: avoid !important;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+font-size: 14px !important;
+line-height: 1.4 !important;
+display: block !important;
+width: 100% !important;
+}
+
+@media print {
+pre {
+white-space: pre !important;
+font-family: "JetBrains Mono", monospace !important;
+display: block !important;
+}
+pre * {
+white-space: pre !important;
+}
+}
+pre code {
+background-color: transparent !important;
+border: none !important;
+padding: 0 !important;
+color: #24292f !important;
+}
+ul, ol {
+padding-left: 1.8em;
+margin-bottom: 12px;
+}
+li {
+margin-bottom: 6px;
+line-height: 1.4;
+}
+
+@media print {
+ul, ol {
+page-break-inside: avoid;
+display: block !important;
+}
+li {
+page-break-inside: avoid;
+display: list-item !important;
+margin-bottom: 8px !important;
+}
+
+* {
+box-sizing: border-box !important;
+}
+}
+p {
+margin-bottom: 12px;
+}
+a {
+color: #0969da;
+text-decoration: none;
+}
+strong {
+font-weight: 600;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width: 100%;
+margin: 16px 0;
+font-size: 16px;
+line-height: 1.5;
+}
+th, td {
+padding: 12px 16px;
+text-align: left;
+vertical-align: top;
+border: 1px solid #d0d7de;
+}
+th {
+font-weight: 600;
+background-color: #f6f8fa;
+color: #24292f;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+}
+tbody tr:nth-child(even) {
+background-color: #f8f9fa;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
+}
+
+table code {
+font-size: 14px !important;
+padding: 2px 4px !important;
+}
+
+table td:first-child {
+min-width: 150px;
+}
+
+table {
+page-break-inside: auto !important;
+}
+th {
+page-break-after: avoid !important;
+}
+tbody tr {
+page-break-inside: avoid !important;
+page-break-after: auto !important;
+}
+
+thead {
+display: table-header-group !important;
+}
+@media print {
+thead {
+display: table-row-group !important;
+}
+table {
+page-break-inside: auto !important;
+}
+tr {
+page-break-inside: avoid !important;
+}
+}
+</style>
+</head>
+<body>
+<h1 id="session-2-instructor-guide-building-game-components">Session 2 Instructor Guide: Building Game Components</h1>
+<h2 id="learning-outcomes">Learning Outcomes</h2>
+<p><strong>By the end of Session 2, students will be able to:</strong></p>
+<ol type="1">
+<li><strong>Create custom React components</strong> that combine markup, styling, and logic using JSX</li>
+<li><strong>Use props</strong> to pass data and behavior from parent to child components</li>
+<li><strong>Apply JSX syntax rules</strong> including curly braces for dynamic expressions and className for styling</li>
+<li><strong>Structure components effectively</strong> using imports, function declarations, destructuring, and return statements</li>
+<li><strong>Style components dynamically</strong> using template literals and variant-based class names</li>
+<li><strong>Implement interactivity</strong> by passing functions as props to handle events like clicks</li>
+<li><strong>Use default parameters</strong> to provide fallback values for props</li>
+<li><strong>Leverage VS Code extensions and snippets</strong> to accelerate component development</li>
+<li><strong>Inspect component structure and props</strong> using React DevTools for debugging</li>
+<li><strong>Compose components together</strong> to build scalable, maintainable UIs</li>
+<li><strong>Follow a professional development workflow</strong> including incremental testing and Hot Module Replacement</li>
+</ol>
+<h2 id="instruction">Instruction</h2>
+<p><strong>Instructor introduces key concepts students need to succeed:</strong></p>
+<ol type="1">
+<li><strong>From SplashScreen to GameButton</strong> - Recap the component swap from Session 1 and introduce the idea of building your own reusable UI elements</li>
+<li><strong>React Components: Your First Custom Tags</strong> - Define components as the building blocks of React apps and show how they encapsulate markup, styling, and logic</li>
+<li><strong>JSX and Curly Braces</strong> - Explain JSX syntax and how {} enables dynamic content, styling, and behavior inside components</li>
+<li><strong>Props: Data and Behavior Flow</strong> - Demonstrate how props allow parent components to pass information and actions to children</li>
+<li><strong>Component Anatomy</strong> - Break down a functional component into imports, function declaration, props destructuring, and JSX return</li>
+<li><strong>Styling with Variants</strong> - Use template literals and dynamic class names to style components based on props</li>
+<li><strong>Functions as Props</strong> - Show how components can trigger actions by receiving functions as props (e.g., onClick)</li>
+<li><strong>Default Parameters and Destructuring</strong> - Introduce fallback values and cleaner syntax for handling props</li>
+<li><strong>VS Code Extensions and Snippets</strong> - Reinforce professional tooling with live demos of snippets like ednf and clg</li>
+<li><strong>React DevTools: Inspect Like a Pro</strong> - Install and use DevTools to explore component trees and props in real time</li>
+<li><strong>Component Composition</strong> - Illustrate how small components combine to form complex UIs, reinforcing the LEGO analogy</li>
+<li><strong>Professional Workflow</strong> - Emphasize incremental development, Hot Module Replacement, and debugging best practices</li>
+<li><strong>Let’s Build!</strong> - Kick off the hands-on coding mission: create, style, and test your own GameButton component</li>
+</ol>
+<hr />
+<h2 id="slide-deck-outline">Slide Deck Outline</h2>
+<h3 id="slide-1-welcome-back-to-component-land"><strong>Slide 1: Welcome Back to Component Land! 🧩</strong></h3>
+<ul>
+<li><strong>Title:</strong> “Session 2: Building Game Components”</li>
+<li><strong>Session 1 Recap:</strong> “Last time: Launched Codespace, swapped components, experienced HMR”</li>
+<li><strong>Hook:</strong> “You’ve experienced React’s magic — now let’s build your own custom components!”</li>
+<li><strong>Today’s Mission:</strong>
+<ul>
+<li><strong>Create</strong> your first reusable React component</li>
+<li><strong>Master</strong> props for component communication</li>
+<li><strong>Style</strong> components with variants</li>
+<li><strong>Install</strong> professional developer tools</li>
+<li><strong>Experience</strong> component composition in action</li>
+</ul></li>
+<li><strong>Visual:</strong> LEGO blocks assembling into a complex structure</li>
+<li><strong>Connection:</strong> “Remember swapping <code>&lt;StartHere /&gt;</code> for <code>&lt;SplashScreen /&gt;</code>? Today you’ll create your own components to swap in!”</li>
+</ul>
+<h3 id="slide-2-components-are-digital-lego-blocks"><strong>Slide 2: Components Are Digital LEGO Blocks 🧩</strong></h3>
+<ul>
+<li><strong>Title:</strong> “What Makes Components So Powerful?”</li>
+<li><strong>Key Points:</strong>
+<ul>
+<li><strong>Reusable</strong> - Write once, use everywhere</li>
+<li><strong>Composable</strong> - Small pieces build complex UIs</li>
+<li><strong>Maintainable</strong> - Change in one place, updates everywhere</li>
+<li><strong>Testable</strong> - Isolated pieces are easier to debug</li>
+</ul></li>
+<li><strong>Why Components Matter:</strong>
+<ul>
+<li><strong>Scalability</strong> - Apps with hundreds of components stay organized</li>
+<li><strong>Team collaboration</strong> - Different developers can work on different components</li>
+<li><strong>Code quality</strong> - Smaller pieces are easier to understand and debug</li>
+</ul></li>
+<li><strong>Real Example:</strong> “A Button component can be used for ‘Start Game’, ‘Credits’, ‘Submit Answer’, etc.”</li>
+<li><strong>Visual:</strong> Component tree showing GameButton used in multiple places</li>
+<li><strong>Student Connection:</strong> “You’ll build a GameButton that works everywhere in your trivia game”</li>
+</ul>
+<h3 id="slide-3-jsx-mastery---reacts-special-language"><strong>Slide 3: JSX Mastery - React’s Special Language 🌟</strong></h3>
+<ul>
+<li><strong>Title:</strong> “JSX: The Language of React Components”</li>
+<li><strong>What is JSX?</strong>
+<ul>
+<li><strong>JSX</strong> = JavaScript XML - React’s HTML-like syntax</li>
+<li>Looks familiar but is actually JavaScript</li>
+<li>Every React component returns JSX to describe its UI</li>
+</ul></li>
+<li><strong>File Extensions:</strong> <code>.jsx</code> files clearly indicate JSX syntax</li>
+<li><p><strong>The Magic of Curly Braces {}:</strong></p>
+<pre class="jsx"><code>const name = &quot;Alice&quot;;
+return &lt;h1&gt;Hello, {name}!&lt;/h1&gt;; // Dynamic content!</code></pre></li>
+<li><strong>JSX vs HTML - Key Differences:</strong>
+<ul>
+<li><code>className</code> instead of <code>class</code> (JavaScript reserved word)</li>
+<li><code>onClick</code> instead of <code>onclick</code> (camelCase convention)</li>
+<li><code>{expression}</code> for dynamic content</li>
+<li>Self-closing tags required: <code>&lt;img /&gt;</code> not <code>&lt;img&gt;</code></li>
+</ul></li>
+<li><strong>JSX Gotchas to Remember:</strong>
+<ul>
+<li>Always close tags: <code>&lt;br /&gt;</code> not <code>&lt;br&gt;</code></li>
+<li>Use camelCase for event handlers: <code>onClick</code>, <code>onChange</code></li>
+<li>Wrap multi-line JSX in parentheses</li>
+</ul></li>
+<li><strong>Curly Brace Power in Action:</strong>
+<ul>
+<li><code>{text}</code> — displays variable content</li>
+<li><code>{onClick}</code> — passes function references</li>
+<li><p>Dynamic CSS classes:</p>
+<pre class="jsx"><code>className={`game-button ${variant}`}</code></pre></li>
+</ul></li>
+<li><p><strong>Student Connection:</strong> “JSX + {} = unlimited UI possibilities!”</p></li>
+</ul>
+<h3 id="slide-4-anatomy-of-a-react-component"><strong>Slide 4: Anatomy of a React Component 🔬</strong></h3>
+<ul>
+<li><strong>Title:</strong> “Component Blueprint: What You’ll Build Today”</li>
+<li><strong>Visual:</strong> Annotated GameButton component with labeled parts</li>
+</ul>
+<pre class="jsx"><code>// 1. Import statements (if needed)
+
+// 2. Function declaration with props destructuring
+export default function GameButton({ text, onClick, variant = &quot;primary&quot; }) {
+  // 3. Logic/variables (optional)
+  const buttonClass = `game-button ${variant}`;
+
+  // 4. Return JSX - this is what gets rendered!
+  return (
+    &lt;button className={buttonClass} onClick={onClick}&gt;
+      {text}
+    &lt;/button&gt;
+  );
+}</code></pre>
+<ul>
+<li><strong>Usage Example:</strong></li>
+</ul>
+<pre class="jsx"><code>&lt;GameButton 
+  text=&quot;Start Adventure&quot; 
+  onClick={() =&gt; alert(&#39;Game starting!&#39;)} 
+  variant=&quot;primary&quot; 
+/&gt;</code></pre>
+<ul>
+<li><strong>Component Blueprint:</strong>
+<ul>
+<li><strong>Props in</strong> - text, onClick, variant</li>
+<li><strong>Logic</strong> - Dynamic class name creation</li>
+<li><strong>JSX out</strong> - Styled, interactive button</li>
+</ul></li>
+<li><strong>Student Focus:</strong> “This is exactly what you’ll build in the next 20 minutes!”</li>
+</ul>
+<h3 id="slide-5-props-the-component-communication-system"><strong>Slide 5: Props: The Component Communication System 📦</strong></h3>
+<ul>
+<li><strong>Title:</strong> “How Components Talk to Each Other”</li>
+<li><strong>Analogy:</strong> “Props are like function parameters, but for React components”</li>
+<li><strong>Visual:</strong> Parent-child diagram showing data flow</li>
+<li><strong>Key Rules:</strong>
+<ul>
+<li><strong>One-way flow</strong> - Parent to child only</li>
+<li><strong>Read-only</strong> - Child can’t modify props</li>
+<li><strong>Any data type</strong> - strings, numbers, functions, objects</li>
+</ul></li>
+<li><strong>Common Prop Types:</strong>
+<ul>
+<li><strong>string</strong> - <code>text=&quot;Start Game&quot;</code></li>
+<li><strong>function</strong> - <code>onClick={() =&gt; alert(&#39;Hi!&#39;)}</code></li>
+<li><strong>boolean</strong> - <code>isDisabled={false}</code></li>
+<li><strong>number</strong> - <code>count={42}</code></li>
+</ul></li>
+<li><strong>Props in Action Preview:</strong> “Watch props flow from SplashScreen to GameButton in real-time”</li>
+<li><strong>Student Preview:</strong> “You’ll pass text, onClick, and variant as props to your GameButton!”</li>
+</ul>
+<h3 id="slide-6-vs-code-extensions---accelerate-your-development"><strong>Slide 6: VS Code Extensions - Accelerate Your Development ⚡</strong></h3>
+<ul>
+<li><strong>Title:</strong> “Professional Developers Use Smart Tools”</li>
+<li><strong>Core Concept:</strong> “VS Code has thousands of extensions for every language and framework — we’re using ES7+ React/Redux/React-Native snippets”</li>
+<li><strong>Top 5 Snippets You’ll Use Today:</strong>
+<ul>
+<li><code>ednf</code> - Export default named function (your GameButton!)</li>
+<li><code>clg</code> - Console.log for debugging</li>
+<li><code>clo</code> - Console.log with label</li>
+<li><code>dob</code> - Destructured object</li>
+<li><code>nfn</code> - Named function</li>
+</ul></li>
+<li><strong>Live Demo:</strong> Type <code>ednf</code> and show snippet expansion in VS Code</li>
+<li><strong>Benefits:</strong>
+<ul>
+<li><strong>Speed</strong> - Write components in seconds, not minutes</li>
+<li><strong>Consistency</strong> - Same structure every time</li>
+<li><strong>Less errors</strong> - Proper syntax automatically</li>
+<li><strong>Professional workflow</strong> - Industry standard practice</li>
+</ul></li>
+<li><strong>Student Encouragement:</strong> “There are extensions for every language — React, Python, Java, CSS. Find ones that accelerate YOUR work!”</li>
+</ul>
+<h3 id="slide-7-functions-as-props---passing-behavior"><strong>Slide 7: Functions as Props - Passing Behavior 🎯</strong></h3>
+<ul>
+<li><strong>Title:</strong> “Components That Do Things”</li>
+<li><strong>Concept:</strong> “Props aren’t just data — they can be functions too!”</li>
+<li><strong>Example:</strong> <code>onClick={() =&gt; alert(&#39;Start Game!&#39;)}</code></li>
+<li><strong>Benefits:</strong>
+<ul>
+<li><strong>Flexible components</strong> - Same button, different actions</li>
+<li><strong>Separation of concerns</strong> - Component handles UI, parent handles logic</li>
+<li><strong>Reusability</strong> - One component, many behaviors</li>
+</ul></li>
+<li><strong>Visual:</strong> Same GameButton with different onClick behaviors</li>
+<li><strong>Student Preview:</strong> “Your buttons will show alerts now, navigate screens later”</li>
+</ul>
+<h3 id="slide-8-react-devtools---x-ray-vision-for-your-app"><strong>Slide 8: React DevTools - X-Ray Vision for Your App 🔍</strong></h3>
+<ul>
+<li><strong>Title:</strong> “Professional Debugging Tools”</li>
+<li><strong>Installation Demo:</strong> Show browser extension installation</li>
+<li><strong>Key Features:</strong>
+<ul>
+<li><strong>Component tree</strong> - See your app’s structure</li>
+<li><strong>Props inspection</strong> - View data flowing between components</li>
+<li><strong>State monitoring</strong> - Watch values change in real-time</li>
+<li><strong>Performance profiling</strong> - Optimize your app</li>
+</ul></li>
+<li><strong>Debug Like a Pro Checklist:</strong>
+<ul>
+<li>✅ Install React DevTools extension</li>
+<li>✅ Open Components tab (not Elements)</li>
+<li>✅ Click on components to see props</li>
+<li>✅ Watch props update in real-time</li>
+</ul></li>
+<li><strong>Live Demo:</strong> Inspect GameButton props in DevTools</li>
+<li><strong>Professional Context:</strong> “Every React developer uses this daily”</li>
+</ul>
+<h3 id="slide-9-lets-build-your-gamebutton-component"><strong>Slide 9: Let’s Build! Your GameButton Component 🚀</strong></h3>
+<ul>
+<li><strong>Today’s Coding Journey:</strong>
+<ol type="1">
+<li><strong>Create</strong> GameButton.jsx using <code>ednf</code> snippet</li>
+<li><strong>Add</strong> text prop for customizable content</li>
+<li><strong>Include</strong> onClick prop for interactivity</li>
+<li><strong>Implement</strong> variant prop for styling</li>
+<li><strong>Import</strong> and use in SplashScreen</li>
+<li><strong>Install</strong> React DevTools for inspection</li>
+</ol></li>
+<li><strong>Success Criteria:</strong> “Two styled buttons with working click handlers”</li>
+<li><strong>Incremental Approach:</strong> “We’ll build step by step — test after each change”</li>
+</ul>
+<h3 id="hands-on-work-happens-here"><strong>[HANDS-ON WORK HAPPENS HERE]</strong></h3>
+<h3 id="slide-10-component-composition---the-big-picture"><strong>Slide 10: Component Composition - The Big Picture 🌟</strong></h3>
+<ul>
+<li><strong>Title:</strong> “How Small Pieces Build Big Apps”</li>
+<li><strong>Visual:</strong> Component hierarchy diagram</li>
+</ul>
+<pre><code>App
+├── SplashScreen
+│   ├── GameLogo
+│   └── GameButton (x2)
+└── (Future components)</code></pre>
+<ul>
+<li><strong>Key Insight:</strong> “Your entire trivia game is just components all the way down”</li>
+<li><strong>Professional Perspective:</strong> “Large apps have hundreds of components working together”</li>
+<li><strong>Student Motivation:</strong> “You’re building the foundation for your entire game”</li>
+</ul>
+<h3 id="slide-11-development-workflow---the-professional-way"><strong>Slide 11: Development Workflow - The Professional Way 💼</strong></h3>
+<ul>
+<li><strong>Title:</strong> “How Real Developers Build Components”</li>
+<li><strong>Workflow Steps:</strong>
+<ol type="1">
+<li><strong>Plan</strong> the component’s purpose and props</li>
+<li><strong>Create</strong> the basic structure with snippets</li>
+<li><strong>Add</strong> props incrementally</li>
+<li><strong>Test</strong> with Hot Module Replacement</li>
+<li><strong>Style</strong> with CSS classes</li>
+<li><strong>Debug</strong> with React DevTools</li>
+</ol></li>
+<li><strong>Best Practices:</strong>
+<ul>
+<li><strong>Start simple</strong> - Add complexity gradually</li>
+<li><strong>Test often</strong> - Catch issues early</li>
+<li><strong>Use tools</strong> - Snippets, DevTools, HMR</li>
+</ul></li>
+<li><strong>Student Empowerment:</strong> “You’re learning professional development practices”</li>
+</ul>
+<h3 id="slide-12-whats-next---state-and-navigation-️"><strong>Slide 12: What’s Next - State and Navigation 🗺️</strong></h3>
+<ul>
+<li><strong>Title:</strong> “Preview of Session 3”</li>
+<li><strong>Today’s Foundation:</strong> “You built reusable components with props”</li>
+<li><strong>Next Challenge:</strong> “Make components remember things and navigate between screens”</li>
+<li><strong>Concepts Coming:</strong>
+<ul>
+<li><strong>State</strong> - Components that remember data</li>
+<li><strong>Context</strong> - Sharing data across the entire app</li>
+<li><strong>Navigation</strong> - Moving between game screens</li>
+</ul></li>
+<li><strong>Motivation:</strong> “Your buttons will actually start the game instead of showing alerts!”</li>
+<li><strong>Visual:</strong> Preview of game navigation flow</li>
+</ul>
+</body>
+</html>

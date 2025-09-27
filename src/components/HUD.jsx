@@ -1,4 +1,5 @@
 import { useGame } from "../hooks/useGame";
+import { getAssetPath } from "../utils/assets";
 
 /**
  * HUD - Heads Up Display
@@ -35,7 +36,9 @@ function MusicToggle() {
       title={music.isPlaying ? "Pause Music" : "Play Music"}
     >
       <img
-        src={music.isPlaying ? "/images/playing.svg" : "/images/paused.svg"}
+        src={getAssetPath(
+          music.isPlaying ? "/images/playing.svg" : "/images/paused.svg"
+        )}
         alt={music.isPlaying ? "Pause" : "Play"}
         className="music-icon"
         width={24}

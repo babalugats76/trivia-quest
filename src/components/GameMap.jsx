@@ -1,5 +1,6 @@
 import { ZONES } from "../data/zones";
 import { useGame } from "../hooks/useGame";
+import { getAssetPath } from "../utils/assets";
 
 /**
  * GAME MAP - Interactive Zone Selection
@@ -44,7 +45,7 @@ export default function GameMap() {
   return (
     <div className="map-canvas">
       <img
-        src="/images/game-map-background.png"
+        src={getAssetPath("images/game-map-background.png")}
         alt="Game Map Background"
         className="map-background"
       />
@@ -599,7 +600,7 @@ export default function GameMap() {
         >
           <image
             id="character-sprite"
-            href={`/images/characters/character-1.png`}
+            href={getAssetPath("images/characters/character-1.png")}
             width="56"
             height="80"
             x="-28" // Center horizontally (56/2)

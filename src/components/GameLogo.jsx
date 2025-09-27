@@ -86,7 +86,6 @@ export default function GameLogo() {
         fontFamily="Pirata One"
         fontSize="60"
       >
-        {/* TODO: Session 1 - Students can customize these text elements */}
         <text
           id="title-first-line"
           x="200"
@@ -95,7 +94,7 @@ export default function GameLogo() {
           letterSpacing="1.5"
           textAnchor="middle"
         >
-          Wizcamp
+          Trivia
         </text>
         <text
           id="title-second-line"
@@ -105,7 +104,7 @@ export default function GameLogo() {
           letterSpacing="3"
           textAnchor="middle"
         >
-          Realms
+          Quest
         </text>
       </g>
 

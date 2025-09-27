@@ -1,3 +1,9 @@
+import { useState } from "react";
+
+import { SCREENS } from "../constants/screens";
+import { useGame } from "../hooks/useGame";
+import CreditsModal from "./CreditsModal";
+import GameButton from "./GameButton";
 import GameLogo from "./GameLogo";
 
 /**
@@ -8,18 +14,31 @@ import GameLogo from "./GameLogo";
  */
 
 export default function SplashScreen() {
-  // TODO: Session 3 - Students will implement startGame and showCredits functions
+  const { setScreen } = useGame();
+  const [showCredits, setShowCredits] = useState(false);
+
+  const startGame = () => {
+    setScreen(SCREENS.PLAYING);
+  };
 
   return (
     <div className="splash-screen">
-      {/* Game Logo */}
       <GameLogo />
 
       <div className="splash-buttons">
-        {/* TODO: Session 2 - Add start and credits buttons */}
+        <GameButton
+          text="Start Adventure"
+          onClick={startGame}
+          variant="primary"
+        />
+        <GameButton
+          text="Credits"
+          onClick={() => setShowCredits(true)}
+          variant="secondary"
+        />
       </div>
 
-      {/* TODO: Session 3 - Conditionally show credits modal */}
+      {showCredits && <CreditsModal onClose={() => setShowCredits(false)} />}
     </div>
   );
 }

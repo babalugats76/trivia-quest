@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/trivia-quest/",
     "preview": "vite preview",
-    "format": "prettier --write .",
+    "format": "eslint --config .eslintrc.format.json --fix src/**/*.{js,jsx} && prettier --write .",
     "format:check": "prettier --check ."
   },
   "keywords": [
@@ -21,14 +21,16 @@
   "author": "Wizcamp",
   "license": "MIT",
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
   },
   "devDependencies": {
-    "@types/react": "18.2.43",
-    "@types/react-dom": "18.2.17",
-    "@vitejs/plugin-react": "4.2.1",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
+    "@vitejs/plugin-react": "5.0.3",
+    "eslint": "8.57.0",
+    "eslint-plugin-simple-import-sort": "12.0.0",
     "prettier": "3.0.3",
-    "vite": "4.5.0"
+    "vite": "7.1.7"
   }
 }

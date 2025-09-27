@@ -6,10 +6,12 @@ This project uses **locked dependency versions** to ensure a consistent learning
 
 ### Locked Versions
 
-- **React**: 18.2.0 (LTS - Long Term Support)
-- **Vite**: 4.5.0 (Stable build tool)
+- **React**: 19.1.1 (Latest stable)
+- **Vite**: 7.1.7 (Latest stable build tool)
 - **Node.js**: 20.x LTS (via .devcontainer)
 - **Prettier**: 3.0.3 (Code formatting)
+- **ESLint**: 8.57.0 (Import ordering)
+- **eslint-plugin-simple-import-sort**: 12.0.0 (Import sorting plugin)
 
 ### Why Lock Versions?
 

@@ -9,16 +9,16 @@
  * - subtitle: Zone tagline/description
  * - categoryId: Question type from https://opentdb.com/api_category.php
  * - difficulty: "easy", "medium", or "hard"
- * - questionCount: How many questions (4, 7, 10)
+ * - questionCount: How many questions (max <=50)
  * - mapLabel: Position and styling for map display
  */
 
 export const ZONES = [
   {
     id: 0,
-    name: "TODO: Your Zone Name",
-    subtitle: "TODO: Your Zone Subtitle",
-    categoryId: 18, // TODO: Choose from API categories
+    name: "Binary Woods",
+    subtitle: "Bytes & Bugs",
+    categoryId: 18, // Computers
     difficulty: "easy",
     questionCount: 4,
     mapLabel: {
@@ -31,7 +31,40 @@ export const ZONES = [
       alignment: "left",
     },
   },
-  // TODO: Session 4 - Add Zone 1 and Zone 2
+  {
+    id: 1,
+    name: "Trivia Dunes",
+    subtitle: "Random Brain Food",
+    categoryId: 9, // General Knowledge
+    difficulty: "medium",
+    questionCount: 7,
+    mapLabel: {
+      x: 360,
+      y: 530,
+      fontSize: "35",
+      fontFamily: "Pirata One, serif",
+      color: "#333",
+      fontWeight: "normal",
+      alignment: "left",
+    },
+  },
+  {
+    id: 2,
+    name: "Frozen Lab",
+    subtitle: "Lab Experiments Gone Wild",
+    categoryId: 17, // Science
+    difficulty: "hard",
+    questionCount: 10,
+    mapLabel: {
+      x: 1000,
+      y: 400,
+      fontSize: "35",
+      fontFamily: "Pirata One, serif",
+      color: "#333",
+      fontWeight: "normal",
+      alignment: "middle",
+    },
+  },
 ];
 
 /**

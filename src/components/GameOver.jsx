@@ -1,17 +1,18 @@
-/**
- * GAME OVER - Victory Screen
- *
- * TODO: Session 8 - Students will create this component
- * - Display final score
- * - Show completed zones count
- * - Add "Play Again" button that calls resetGame()
- */
+import { SCREENS } from "../constants/screens";
+import { useGame } from "../hooks/useGame";
+import GameButton from "./GameButton";
 
 export default function GameOver() {
+  const { score, resetGame, setScreen } = useGame();
+  const playAgain = () => {
+    resetGame();
+    setScreen(SCREENS.SPLASH);
+  };
   return (
     <div className="game-over">
-      <div>Victory screen will appear here...</div>
-      {/* TODO: Add score display and restart functionality */}
+      <h1>Congratulations!</h1>
+      <div className="final-score">Final Score: {score}</div>
+      <GameButton text="Play Again" onClick={playAgain} variant="primary" />
     </div>
   );
 }

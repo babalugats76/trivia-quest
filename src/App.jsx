@@ -7,12 +7,29 @@
  * TODO: Session 8 - Add GameOver screen navigation
  */
 
-import StartHere from "./components/StartHere";
+import CoordinateDisplay from "./components/CoordinateDisplay";
+import GameMap from "./components/GameMap";
+import GameOver from "./components/GameOver";
+import HUD from "./components/HUD";
+import QuizModal from "./components/QuizModal";
+import SplashScreen from "./components/SplashScreen";
+import { SCREENS } from "./constants/screens";
+import { useGame } from "./hooks/useGame";
 
 export default function App() {
+  const { isQuizVisible, screen } = useGame();
   return (
     <div className="app-container">
-      <StartHere />
+      {screen === SCREENS.SPLASH && <SplashScreen />}
+      {screen === SCREENS.PLAYING && (
+        <>
+          <GameMap />
+          <HUD />
+          {isQuizVisible && <QuizModal />}
+          <CoordinateDisplay />
+        </>
+      )}
+      {screen === SCREENS.GAME_OVER && <GameOver />}
     </div>
   );
 }
